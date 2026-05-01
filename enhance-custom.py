@@ -1,9 +1,19 @@
 S = input()
 N = int(input())
-ps = list(input().split())
+p = list(input().split())
 
-for p in ps:
+for i in range(N):
     S += ' '
-    for i in range(int(p)):
+    for v in range(int(p[i])):
         S += 'a'
 print(S)
+
+# 別解
+# S = input()
+# N = int(input())
+# ps = list(input().split())
+# for p in ps:
+#     S += ' '
+#     for i in range(int(p)):
+#         S += 'a'
+# print(S)
